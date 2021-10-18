@@ -116,8 +116,11 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  max-width: 1600px;
   min-height: 600px;
   background: var(--herobgc);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herobgc.jpg);
 }
 .hero-title {
   margin-bottom: 30px;
@@ -171,7 +174,15 @@ img {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
+.features-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: var(--secbgc);
+  border-radius: 4px;
+}
 .features-title {
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
