@@ -174,9 +174,10 @@ img {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
-.features-item::before {
-  display: block;
-  content: '';
+.features-icon-antenna {
+}
+.features-icons {
+  text-align: center;
   height: 120px;
   background-color: var(--secbgc);
   border-radius: 4px;
@@ -252,6 +253,22 @@ img {
 }
 .adress-info-item:not(:last-child) {
   margin-bottom: 9px;
+}
+/* icons */
+.footer-social {
+  display: flex;
+}
+.footer-social-item {
+}
+.footer-social-link {
+  border-radius: 50%;
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-instagram {
+  fill: #ffffff;
 }
 
 /* portfolio */
