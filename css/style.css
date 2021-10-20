@@ -6,6 +6,7 @@
   --herobgc: #2f303a;
   --mainbgc: #ffffff;
   --secbgc: #f5f4fa;
+  --iconsfill: #afb1b8;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -174,16 +175,16 @@ img {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
-.features-icon-antenna {
-}
 .features-icons {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
+  margin-bottom: 30px;
   background-color: var(--secbgc);
   border-radius: 4px;
 }
 .features-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
@@ -222,14 +223,43 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+/* icons */
+.team-icons {
+  display: flex;
+  justify-content: center;
+}
+.team-icons-list:not(:last-child) {
+  margin-right: 10px;
+}
+.team-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--mainbgc);
+}
+.team-icons-link:hover,
+.team-icons-link:focus {
+  background-color: var(--text-color-logo);
+}
+.team-icons-tumb {
+  fill: var(--iconsfill);
+}
+.team-icons-tumb:hover,
+.team-icons-tumb:focus {
+  fill: var(--mainbgc);
+}
 .team-header {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--text-color-sec);
 }
 .team-text {
-  margin-top: 10px;
+  margin-bottom: 16px;
 }
 /* footer */
 .footer {
@@ -255,6 +285,16 @@ img {
   margin-bottom: 9px;
 }
 /* icons */
+.footer-links {
+}
+.footer-social-header {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-color-white);
+}
 .footer-social {
   display: flex;
 }
@@ -262,12 +302,18 @@ img {
 }
 .footer-social-link {
   border-radius: 50%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-social-instagram {
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--text-color-logo);
+}
+.footer-social-icon {
   fill: #ffffff;
 }
 
